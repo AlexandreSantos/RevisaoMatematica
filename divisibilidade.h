@@ -6,7 +6,7 @@
   * é necessário dividí-lo por 2, se o resto for 0, o número é par e divisível por 2
   * @return bool
   */
-div2(int num){
+int div2(int num){
          if(num % 2 == 0){
                 return 1;
          }else{
@@ -22,15 +22,15 @@ div2(int num){
   * 9 é divisível por 9? Sim...
   * @return bool
   */
-div3(char num[]){
+int div3(char num[]){
         char conta[20];
-        int lengthNum, i; 
+        int lengthNum, i, casting; 
         
-        /*
         for(i = 0; i < strlen(num); i++){
-                conta = conta + atoi(num[i]);
+                casting = (int)num[i];
+                printf("The number of this moment is >>>>> %d", casting);
+                lengthNum = lengthNum + casting;
         }
-        */
         
-        return i;
+        return lengthNum;
 }

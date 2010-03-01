@@ -26,7 +26,25 @@ int main(int argc, char *argv[])
   // testa se ele é divisível por 3
   printf("Enter a string: ");
   scanf("%s", str);
-  printf("your string is: %s", str);
+  
+  /**
+    * Eu passei para ca o algoritimo de pegar valores absolutos
+    * de um número inteiro e somá-los entre si para fazer uma 
+    * melhor debugação.... OBS: a função fgets() ñ funciona no Dev-C no win7
+    */
+  int lengthNum, i, casting; 
+        
+        for(i = 0; i < strlen(str); i++){
+                casting = (int)str[i] - 48;
+                printf("\n");
+                printf("The number of this moment is >>>>> %d \n", casting);
+                lengthNum = 0;
+                lengthNum = lengthNum + casting;
+        }
+  
+  
+  printf("your string is: %d", lengthNum);
+
   //printf("\n the length your string is: %d", div3(str)); 
 
   printf("\n\n");
