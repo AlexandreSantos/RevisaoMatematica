@@ -23,8 +23,12 @@ div2(int num){
   * @return bool
   */
 div3(char num[]){
-        char number[6];
-        int nuns; 
+        char conta[20];
+        int lengthNum, i; 
         
-        return strlen(num);
+        for(i = 0; i < strlen(num); i++){
+                conta = conta + atoi(num[i]);
+        }
+        
+        return conta;
 }

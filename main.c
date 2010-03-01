@@ -9,8 +9,8 @@ int main(int argc, char *argv[])
   int result;
   char str[];
 
-  // pega número
-  printf("Digite um numero: ");
+  // testa se ele é divisível por 2
+  printf("Enter a number: ");
   scanf("%d", &num);
   
   result = div2(num);
@@ -23,8 +23,8 @@ int main(int argc, char *argv[])
   
   printf("\n\n ----------------------------------------------- \n\n");
   
-  printf("Digte uma string: ");
-  //scanf("%s", &str);
+  // testa se ele é divisível por 3
+  printf("Enter a string: ");
   gets(str);
   printf("\n the length your string is: %d", div3(str)); 
 
