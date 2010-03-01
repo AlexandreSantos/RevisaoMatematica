@@ -26,9 +26,11 @@ div3(char num[]){
         char conta[20];
         int lengthNum, i; 
         
+        /*
         for(i = 0; i < strlen(num); i++){
                 conta = conta + atoi(num[i]);
         }
+        */
         
-        return conta;
+        return i;
 }

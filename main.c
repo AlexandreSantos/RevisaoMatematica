@@ -7,7 +7,7 @@ int main(int argc, char *argv[])
 {
   int num;
   int result;
-  char str[];
+  char str[10];
 
   // testa se ele é divisível por 2
   printf("Enter a number: ");
@@ -25,8 +25,9 @@ int main(int argc, char *argv[])
   
   // testa se ele é divisível por 3
   printf("Enter a string: ");
-  gets(str);
-  printf("\n the length your string is: %d", div3(str)); 
+  scanf("%s", str);
+  printf("your string is: %s", str);
+  //printf("\n the length your string is: %d", div3(str)); 
 
   printf("\n\n");
   system("PAUSE");
